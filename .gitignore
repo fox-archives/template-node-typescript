@@ -1,0 +1,11 @@
+
+
+# output
+dist/
+build/
+
+# logs
+*.log
+
+# packages
+node_modules/

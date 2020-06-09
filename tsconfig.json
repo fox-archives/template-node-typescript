@@ -1,0 +1,45 @@
+{
+	"compileOnSave": true,
+	"include": [
+		"src/**/*"
+	],
+	"compilerOptions": {
+		"outDir": "build",
+		"sourceMap": true,
+		"target": "ES2019",
+		"module": "ESNext",
+		"allowJs": true,
+		"esModuleInterop": true,
+		"isolatedModules": true,
+		"moduleResolution": "node",
+		"strict": true,
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"typeRoots": [
+			"./node_modules/@types",
+			"./@types"
+		],
+		"types": [
+			"node",
+			"jest"
+		],
+		"lib": [
+			"ESNext"
+		],
+		// ensure this is on for composite and project references
+		"declaration": true,
+		// "declarationMap": true,
+		// "incremental": true,
+		"baseUrl": ".",
+
+		// linter checks / etc
+		"noFallthroughCasesInSwitch": false, // default
+		"noImplicitReturns": true,
+		"noUnusedLocals": false, // default
+		"noUnusedParameters": false,
+		"allowUnusedLabels": false, // default
+		"forceConsistentCasingInFileNames": true,
+		"useDefineForClassFields": true
+	}
+}
+

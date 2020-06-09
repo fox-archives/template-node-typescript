@@ -1,0 +1,46 @@
+{
+  "name": "template-node-typescript",
+  "version": "0.1.0",
+  "description": "Template for Node Typescritp projects",
+  "main": "build",
+  "scripts": {
+    "start": "node build/main.js",
+    "build:ts": "tsc --build",
+		"build:babel": "babel src/main.ts --extensions .js,.ts --out-dir build",
+		"watch:babel": "babel src --watch --extensions .mjs,.js,.jsx,.ts,.tsx --out-dir build",
+    "watch": "cross-env NODE_ENV=development tsc --build --watch",
+    "test": "cross-env NODE_ENV=test jest"
+  },
+  "engines": {
+    "node": ">=12.18.0 >=14.3.0",
+    "pnpm": ">=5.0.0"
+  },
+  "repository": "fox-land/template-node-typescript",
+  "author": {
+    "name": "Edwin Kofler",
+    "url": "https://kofler.dev"
+  },
+  "keywords": [
+    "template",
+    "typescript",
+    "fox-land"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "esm": "^3.2.25"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@fox-land/babel-preset": "^0.3.0",
+    "@types/jest": "^25.2.3",
+    "@types/node": "^14.0.12",
+    "cross-env": "^7.0.2",
+    "jest": "^26.0.1",
+    "jest-extended": "^0.11.5",
+    "nodemon": "^2.0.4",
+    "ts-jest": "^26.1.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  }
+}
